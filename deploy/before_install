@@ -1,3 +1,23 @@
 #!/bin/sh
-cd /var/api
-npm install
+yum -y update
+
+echo "Checking for app directory"
+if [ -d /apps/vc-chat ]; then
+  echo "App directory exists, recreating"
+  sudo rm -R /apps/vc-chat
+  mkdir /apps/vc-chat
+else
+  echo "Creating new app directory"
+  mkdir /apps/vc-chat
+fi
+
+if [ ! -d ~/.nvm/nvm.sh ]; then
+  echo "Installing NVM"
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  . ~/.nvm/nvm.sh
+else
+  echo "NVM already installed"
+fi
+
+cd /apps/vc-chat
+nvm install
