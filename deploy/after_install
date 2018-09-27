@@ -3,6 +3,8 @@ cd /apps/vc-chat
 
 node_version=$(cat .nvmrc)
 
+. ~/.nvm/nvm.sh
+
 if [[ $(nvm ls | grep ${node_version}) == "" ]]; then
   nvm install
 else
