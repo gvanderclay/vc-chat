@@ -1,5 +1,13 @@
 #!/bin/sh
-cd /var/api
+cd /apps/vc-chat
+
+node_version=$(cat .nvmrc)
+
+if [[ $(nvm ls | grep ${node_version}) == "" ]]; then
+  nvm install
+else
+  nvm use
+fi
 
 echo "Installing node packages"
 npm install

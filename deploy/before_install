@@ -18,6 +18,3 @@ if [ ! -d ~/.nvm/nvm.sh ]; then
 else
   echo "NVM already installed"
 fi
-
-cd /apps/vc-chat
-nvm install
