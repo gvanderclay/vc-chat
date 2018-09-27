@@ -1,3 +1,6 @@
 #!/bin/sh
 cd /var/api
+
+echo "Installing node packages"
+npm install
 npm start
