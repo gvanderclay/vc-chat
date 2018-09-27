@@ -14,7 +14,8 @@ fi
 if [ ! -d ~/.nvm/nvm.sh ]; then
   echo "Installing NVM"
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-  . ~/.nvm/nvm.sh
 else
   echo "NVM already installed"
 fi
+
+. ~/.nvm/nvm.sh
