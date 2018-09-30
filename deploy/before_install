@@ -4,8 +4,6 @@ set -e
 
 yum -y update
 
-sudo amazon-linux-extras install nginx1.12
-
 echo "Checking for app directory"
 if [ -d /apps/vc-chat ]; then
   echo "App directory exists, recreating"
@@ -22,5 +20,3 @@ if [ ! -d ~/.nvm/nvm.sh ]; then
 else
   echo "NVM already installed"
 fi
-
-sudo systemctl start nginx
