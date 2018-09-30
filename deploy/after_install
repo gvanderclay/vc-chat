@@ -21,4 +21,6 @@ nvm exec npm install -g pm2
 echo "Installing node packages"
 nvm exec npm install
 
+echo "Starting pm2"
 pm2 start npm -- start
+exit 1
