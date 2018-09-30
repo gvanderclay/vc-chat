@@ -16,9 +16,9 @@ else
 fi
 
 echo "Installing pm2"
-sudo npm install -g pm2
+sudo nvm exec npm install -g pm2
 
 echo "Installing node packages"
-npm install
+nvm exec npm install
 
 # pm2 start npm -- start
