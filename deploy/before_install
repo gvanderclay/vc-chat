@@ -4,7 +4,7 @@ set -e
 
 yum -y update
 
-yum install nginx -y
+sudo amazon-linux-extras install nginx1.12
 
 echo "Checking for app directory"
 if [ -d /apps/vc-chat ]; then
