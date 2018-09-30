@@ -22,5 +22,4 @@ echo "Installing node packages"
 nvm exec npm install
 
 echo "Starting pm2"
-pm2 start npm -- start
-exit 1
+PORT=80 pm2 start npm --name "vc-chat" -- start

@@ -20,3 +20,4 @@ if [ ! -d ~/.nvm/nvm.sh ]; then
 else
   echo "NVM already installed"
 fi
+
