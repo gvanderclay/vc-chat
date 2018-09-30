@@ -6,7 +6,6 @@ cd /apps/vc-chat
 
 node_version=$(cat .nvmrc)
 
-. ./deploy/enable_nvm
 
 . ~/.nvm/nvm.sh
 
