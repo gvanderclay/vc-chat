@@ -7,7 +7,7 @@ yum -y update
 echo "Checking for app directory"
 if [ -d /apps/vc-chat ]; then
   echo "App directory exists, recreating"
-  sudo rm -R /apps/vc-chat
+  rm -R /apps/vc-chat
   mkdir /apps/vc-chat
 else
   echo "Creating new app directory"
