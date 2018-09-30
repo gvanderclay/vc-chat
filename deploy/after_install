@@ -16,7 +16,7 @@ else
 fi
 
 echo "Installing pm2"
-sudo nvm exec npm install -g pm2
+nvm exec npm install -g pm2
 
 echo "Installing node packages"
 nvm exec npm install
