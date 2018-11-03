@@ -14,7 +14,8 @@
     "@types/socket.io": "^1.4.37",
     "express": "^4.16.3",
     "socket.io": "^2.1.1",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "yarn": "^1.12.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.3",
