@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 cd ~/node
-pm2 stop www || true
+pm2 stop vc-chat || true
