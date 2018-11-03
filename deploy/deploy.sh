@@ -3,7 +3,7 @@
 commitId=`git rev-parse HEAD`
 
 aws deploy create-deployment \
-  --application-name VC-Chat \
+  --application-name vc-chat \
   --deployment-config-name CodeDeployDefault.OneAtATime \
   --deployment-group-name staging \
   --description "Staging VC-Chat deploy" \
