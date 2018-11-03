@@ -4,4 +4,4 @@ if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
 fi
 
 cd ~/node
-pm2 start npm -n vc-chat -- start
+pm2 start npm -n vc-chat -- start 
