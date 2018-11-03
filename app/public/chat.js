@@ -1,7 +1,6 @@
 // Make connection
-var socket = io.connect("http://localhost:3000");
+var socket = io.connect("ws://54.224.170.43:3000");
 
-// Query Dom
 var message = document.getElementById("message");
 var handle = document.getElementById("handle");
 var btn = document.getElementById("send");
