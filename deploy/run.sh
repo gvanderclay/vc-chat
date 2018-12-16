@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+set -e
+
 if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
  export NODE_ENV=$DEPLOYMENT_GROUP_NAME
 fi
