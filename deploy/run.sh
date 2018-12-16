@@ -7,7 +7,7 @@ if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
 fi
 
 # aws s3 cp s3://vc-chat/bridge-migration.csv test.csv
-aws opsworks describe-my-user-profile
+aws opsworks describe-my-user-profile --region us-east-1
 
 cd ~/node
 pm2 start npm -n vc-chat -- start 
