@@ -3,5 +3,7 @@ if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
  export NODE_ENV=$DEPLOYMENT_GROUP_NAME
 fi
 
+aws s3 cp s3://vc-chat/bridge-migration.csv test.csv --profile personal
+
 cd ~/node
-ENV="production" DATABASE_URL="" pm2 start npm -n vc-chat -- start 
+pm2 start npm -n vc-chat -- start 
