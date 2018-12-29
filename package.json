@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "./node_modules/nodemon/bin/nodemon.js",
-    "start": "ts-node app/server.ts"
+    "start": "ts-node -r dotenv/config app/server.ts"
   },
   "author": "",
   "license": "ISC",

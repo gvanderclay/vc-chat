@@ -9,6 +9,6 @@ fi
 
 cd /home/ec2-user/node
 
-aws s3 cp s3://vc-chat/bridge-migration.csv test.csv --debug
+aws s3 cp s3://vc-chat/vc-chat-creds .env
 
 pm2 start npm -n vc-chat -- start 
