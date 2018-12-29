@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-cd ~/node
+
+cd /home/ec2-user/node || exit
 pm2 stop vc-chat || true

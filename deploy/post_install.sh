@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-cd ~/node
+cd /home/ec2-user/node
 npm install
 
 # setup NODE_ENV
@@ -19,5 +19,5 @@ fi
 # add node to startup
 hasRc=`grep "su -l $USER" /etc/rc.d/rc.local | cat`
 if [ -z "$hasRc" ]; then
-    sudo sh -c "echo 'su -l $USER -c \"cd ~/node;sh ./run.sh\"' >> /etc/rc.d/rc.local"
+    sudo sh -c "echo 'su -l $USER -c \"cd /home/ec2-user/node;sh ./run.sh\"' >> /etc/rc.d/rc.local"
 fi
