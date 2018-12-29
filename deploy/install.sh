@@ -3,7 +3,7 @@
 set -e
 
 # update instance
-# yum -y update
+yum -y update
 
 curl --silent --location curl -sL "https://rpm.nodesource.com/setup_8.x" | bash -
 
